@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fawad Sports Store</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+        body { background: #f8fafc; color: #0f172a; }
+        header { background: #0f172a; color: white; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+        header h1 { font-size: 24px; font-weight: bold; }
+        nav a { color: #cbd5e1; text-decoration: none; margin-left: 20px; font-weight: 500; }
+        nav a:hover { color: #38bdf8; }
+        .hero { background: linear-gradient(135deg, #0284c7, #0f172a); color: white; padding: 80px 20px; text-align: center; }
+        .hero h2 { font-size: 40px; margin-bottom: 15px; }
+        .hero p { font-size: 18px; margin-bottom: 25px; opacity: 0.9; }
+        .btn { background: #38bdf8; color: #0f172a; padding: 12px 28px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; }
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .section-title { font-size: 28px; margin-bottom: 25px; border-bottom: 3px solid #0284c7; display: inline-block; padding-bottom: 5px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+        .card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+        .card-body { padding: 20px; }
+        .card-title { font-size: 18px; margin-bottom: 10px; font-weight: 600; }
+        .card-price { color: #0284c7; font-size: 20px; font-weight: bold; margin-bottom: 15px; }
+        footer { text-align: center; padding: 25px; background: #0f172a; color: #94a3b8; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fawad Sports Store</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/admin.html">Admin Panel</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome to Fawad Sports Store</h2>
+        <p>Premium Quality Sports Equipment & Gear</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+
+    <div class="container" id="products">
+        <h3 class="section-title">Featured Products</h3>
+        <div class="grid">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">Tape Ball Cricket Bat</div>
+                    <div class="card-price">Rs. 2,500</div>
+                    <a href="#" class="btn" style="width: 100%; text-align: center;">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">Professional Football (Size 5)</div>
+                    <div class="card-price">Rs. 1,800</div>
+                    <a href="#" class="btn" style="width: 100%; text-align: center;">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">Badminton Racket Set</div>
+                    <div class="card-price">Rs. 3,200</div>
+                    <a href="#" class="btn" style="width: 100%; text-align: center;">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Fawad Sports Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
